@@ -1,0 +1,43 @@
+package homework;
+
+class Employee
+{
+	
+	int getsalary()
+	{
+		int salary1=34999;
+		System.out.println("Salary Creadited : "+salary1);
+		return salary1;
+	}
+}
+
+class Manager extends Employee
+{	
+	int getsalary()
+	{
+		
+		int salary1=34999;
+		int travel_allowns=2000;
+		int house_rent=2500;
+		
+		salary1=salary1+travel_allowns+house_rent;
+		System.out.println("Salary Creadited With Allowsens : "+salary1);
+		
+		return salary1;
+	}
+}
+
+public class Method_overriding {
+
+	public static void main(String[] args) {
+	
+		
+		Manager manager = new Manager();
+		Employee employee = new Employee();
+		manager.getsalary();
+		employee.getsalary();
+		
+		
+	}
+
+}
